@@ -7,15 +7,6 @@
  */
 int main(void)
 {
-	const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	ssize_t len = 0;
-
-	while (message[len] != '\0')
-	{
-		len++;
-	}
-
-	write(2, message, len); /* Use write to print to standard error (file descriptor 2) */
-
-	return (1); /* Return 1 to indicate an error */
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19"\n", 59); 
+	return (1); 
 }
