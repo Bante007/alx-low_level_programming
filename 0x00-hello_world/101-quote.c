@@ -19,5 +19,5 @@ int main(void)
 	write(2, message, len); /* Use write to print to standard error
 				   (file descriptor 2) */
 
-	return (1); /* Retunr 1 to indicate an error */
+	return (1); /* Return 1 to indicate an error */
 }
