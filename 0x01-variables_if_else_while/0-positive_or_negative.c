@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>	/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* Main - Entry line of the program */
 int main(void)
 {
 	int n;
@@ -21,6 +21,6 @@ int main(void)
 	{
 		printf("negative\n");
 	}
-	print("n\")
+	print("n\");
 	return (0);
 }
