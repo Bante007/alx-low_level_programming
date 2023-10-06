@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* Main - Entry line of the program */
+/* more headers goes there
+ *
+ * Main - Entry line of the program */
 int main(void)
 {
 	int n;
@@ -25,6 +25,6 @@ int main(void)
 	{
 		printf("negative\n");
 	}
-	print("\n");
+	printf("\n");
 	return (0);
 }
