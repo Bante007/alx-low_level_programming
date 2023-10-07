@@ -5,30 +5,35 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program prints the last digit of any random number
- * using the printf function. Each program is printed on a new line.
- *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-	int n;
+        int n;
+        int lastDigit;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	printf ("Last digit of %d is %d " n, n);
-	if (n > 5)
-	{
-	printf ("and is greater than 5");
-	}
-	else if (n == 0)
-	{
-		printf ("and is 0");
-	}
-	else if ((n < 6) != 0)
-	{
-		printf ("and is less than 6 and not zero");
-	}
-	printf ("\n");
-	return (0);
+        srand(time(0)); /* Seed the random number generator */
+        n = rand() - RAND_MAX / 2; /* Generate a random number */
+
+        printf("Last digit of %d is ", n);
+
+        /* Use modulo operator (%) to get the last digit */
+        lastDigit = n % 10;
+
+        printf("%d and is ", lastDigit);
+
+        if (lastDigit > 5)
+        {
+                printf("greater than 5\n");
+        }
+        else if (lastDigit == 0)
+        {
+                printf("0\n");
+        }
+        else
+        {
+                printf("less than 6 and not 0\n");
+        }
+
+        return (0);
 }
