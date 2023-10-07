@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point of the program
  *
@@ -7,15 +6,14 @@
  */
 int main(void)
 {
-        char letter = 'a';
+        int digit = 0;
 
-        while (letter <= 'z')
+        while (digit <= 9)
         {
-                putchar(letter);
-                letter++;
+                putchar(digit + '0');
+                digit++;
         }
 
         putchar('\n');
-
         return (0);
 }
