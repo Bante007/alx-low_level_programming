@@ -1,12 +1,13 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
- *main - Entry point of the program
+ * main - Entry point of the program
  *
- *Return: 0 to indicate success
+ * Return: 0 to indicate success
  */
-int main(void)
+int_putchar(char c);
 {
-	printf("_putchar\n");
-	return (0);
+	    printf("_putchar\n");
+	        return (0);
 }
+

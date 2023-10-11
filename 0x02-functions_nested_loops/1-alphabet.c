@@ -1,7 +1,7 @@
-#include <unistd.h>
+#include <main.h>
 
 /**
- * print_alphabet - Prints the lowercase alphabet followed by a newline
+ * print_alphabet - Prints the lowercase alphabet followed by a new line
  */
 void print_alphabet(void)
 {
@@ -9,9 +9,9 @@ void print_alphabet(void)
 
 	while (letter <= 'z')
 	{
-		_putchar(letter);
-		letter++;
+		_putchar(letter)
+			letter++;
 	}
 
-	_putchar('\n');
+_putchar('\n');
 }
