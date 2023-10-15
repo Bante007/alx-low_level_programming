@@ -1,25 +1,35 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_square - Prints a square composed of the '#' character.
- * @size: The size of the square (number of rows and columns).
+ * main - Prints numbers from 1 to 100, replacing multiples of 3 with "Fizz,
+ *	" multiples of 5 with "Buzz," and both with "FizzBuzz."
+ *
+ * Return: Always 0.
  */
-void print_square(int size)
+int main(void)
 {
-	int sideLength, squareSize;
+	int digit;
 
-	if (size > 0)
+	for (digit = 1; digit <= 100; digit++)
 	{
-		for (sideLength = 0; sideLength < size; sideLength++)
-		{
-			for (squareSize = 0; squareSize < size; squareSize++)
-				_putchar('#');
+		if ((digit % 3) == 0 && (digit % 5) == 0)
+			printf("FizzBuzz");
 
-			if (sideLength == size - 1)
-				continue;
-			_putchar('\n');
-		}
+		else if ((digit % 3) == 0)
+			printf("Fizz");
+
+		else if ((digit % 5) == 0)
+			printf("Buzz");
+
+		else
+			printf("%d", digit);
+
+		if (digit == 100)
+			continue;
+		printf(" ");
 	}
 
-	_putchar('\n');
+	printf("\n");
+
+	return (0);
 }
