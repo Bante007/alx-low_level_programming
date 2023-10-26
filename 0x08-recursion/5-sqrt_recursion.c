@@ -22,3 +22,23 @@ int _sqrt_helper(int n, int guess)
 
 	return (_sqrt_helper(n, guess + 1));
 }
+
+/**
+ * _sqrt_recursion - Returns the square root of a number.
+ * @n: Number to find the square root of.
+ * Return: The square root if found, -1 if not.
+ */
+int _sqrt_recursion(int n)
+{
+	int guess = 0;
+
+	if (n < 0)
+	{
+		return (-1);
+	}
+	if (n == 1)
+	{
+		return (1);
+	}
+	return (_sqrt_helper(n, guess));
+}
